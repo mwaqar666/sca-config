@@ -1,0 +1,31 @@
+{
+  "name": "sca-config",
+  "version": "0.0.1",
+  "description": "Config for support chat application",
+  "author": "Muhammad Waqar",
+  "private": true,
+  "license": "ISC",
+  "keywords": [],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc && tsc-alias"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "tsc-alias": "^1.7.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@nestjs/config": "^2.2.0",
+    "joi": "^17.7.0"
+  },
+  "peerDependencies": {
+    "sca-core": "file:/home/mwaqar666/code/alldesk/sca-core/sca-core-0.0.1.tgz"
+  }
+}
