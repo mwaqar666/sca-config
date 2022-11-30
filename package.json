@@ -1,14 +1,28 @@
 {
   "name": "sca-config",
   "version": "0.0.1",
-  "description": "Config for support chat application",
-  "author": "Muhammad Waqar",
-  "private": true,
-  "license": "ISC",
-  "keywords": [],
+  "homepage": "https://github.com/mwaqar666/sca-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwaqar666/sca-config.git"
+  },
+  "description": "Configured configuration module for NestJS",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "NestJS config",
+    "NestJS config boilerplate",
+    "NestJS reusable config utility"
+  ],
+  "author": "Muhammad Waqar",
+  "license": "MIT",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
-    "build": "rm -rf dist && tsc && tsc-alias"
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf dist",
+    "compile": "tsc && tsc-alias"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
@@ -26,6 +40,6 @@
     "joi": "^17.7.0"
   },
   "peerDependencies": {
-    "sca-core": "file:/home/mwaqar666/code/alldesk/sca-core/sca-core-0.0.1.tgz"
+    "sca-utils": "^0.0.1"
   }
 }
